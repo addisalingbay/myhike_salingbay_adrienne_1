@@ -18,7 +18,7 @@ async function displayHikeInfo() {
         // Update the page
         document.getElementById("hikeName").textContent = name;
         const img = document.getElementById("hikeImage");
-        img.src = `./images/${code}.jpg`;
+        img.src = code ? `/images/${code}.jpg` : '/images/hikelogo.png';
         img.alt = `${name} image`;
     } catch (error) {
         console.error("Error loading hike:", error);

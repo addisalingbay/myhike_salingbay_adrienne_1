@@ -103,7 +103,7 @@ async function displayHikesDynamically() {
         newcard.querySelector('.card-title').textContent = hike.name;
         newcard.querySelector('.card-text').textContent = hike.details || `Located in ${hike.city}.`;
         newcard.querySelector('.card-length').textContent = hike.length;
-        newcard.querySelector('.card-image').src = `./images/${hike.code}.jpg`;
+        newcard.querySelector('.card-image').src = hike.code ? `/images/${hike.code}.jpg` : '/images/hikelogo.png';
         newcard.querySelector(".read-more").href = `eachHike.html?docID=${doc.id}`;
 
         // attach the template to the fron-end

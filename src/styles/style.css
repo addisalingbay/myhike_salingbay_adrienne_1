@@ -1,1 +1,13 @@
+/* Global custom styles (Bootstrap is imported in src/app.js) */
+
+/* Keep hike card images a consistent size */
+.card-image {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Keep the footer text tidy */
+footer p {
+  font-size: 0.9rem;
+}
 
