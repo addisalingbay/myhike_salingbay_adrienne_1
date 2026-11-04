@@ -11,9 +11,14 @@
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.8",
     "bootstrap-icons": "^1.13.2",
-    "firebase": "^13.0.0"
+    "firebase": "^9.14.0"
   },
   "devDependencies": {
     "vite": "^7.1.9"
+  },
+  "allowScripts": {
+    "@firebase/util@1.15.3": true,
+    "esbuild@0.28.2": true,
+    "protobufjs": false
   }
 }
