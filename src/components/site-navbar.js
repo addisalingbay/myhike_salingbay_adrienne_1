@@ -2,10 +2,9 @@
 import { logoutUser , onAuthReady} from '/src/authentication.js';   // Our function to log out the user
 
 class SiteNavbar extends HTMLElement {
-    constructor() {
-        super();
+    connectedCallback() {
         this.renderNavbar();
-        this.renderAuthControls(); 
+        this.renderAuthControls();
     }
 
     renderNavbar() {
@@ -13,7 +12,7 @@ class SiteNavbar extends HTMLElement {
             <!-- Navbar: single source of truth -->
             <nav class="navbar navbar-expand-lg navbar-light bg-warning">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="/">
+                    <a class="navbar-brand" href="/index.html">
                         <img src="/images/hikelogo.png" height="36">
                         Hoda Hikes
                     </a>
@@ -24,7 +23,13 @@ class SiteNavbar extends HTMLElement {
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="/">Home</a>
+                                <a class="nav-link" href="/index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/main.html">Hikes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/addHike.html">Add a hike</a>
                             </li>
                         </ul>
                         <div class="d-flex align-items-center gap-2 ms-lg-2" id="rightControls">
