@@ -10,11 +10,11 @@ class SiteNavbar extends HTMLElement {
     renderNavbar() {
         this.innerHTML = `
             <!-- Navbar: single source of truth -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+            <nav class="navbar navbar-expand-lg navbar-light bg-info">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="/index.html">
                         <img src="/images/hikelogo.png" height="36">
-                        Hoda Hikes
+                        ADRIENNE HIKES
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,6 +25,8 @@ class SiteNavbar extends HTMLElement {
                             <li class="nav-item">
                                 <a class="nav-link" href="/index.html">Home</a>
                             </li>
+                            <li class="nav-item"><a class="nav-link" href="/addHike.html">Add hike</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/profile.html">Profile</a></li>
                             <li class="nav-item">
                                 <a class="nav-link" href="/main.html">Hikes</a>
                             </li>
